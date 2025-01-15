@@ -30,68 +30,20 @@
     <meta name="theme-color" content="#2e3440" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#eceff4" media="(prefers-color-scheme: light)" />
 
+    <link rel="stylesheet" href="styles.css" />
     <style>
-      :root {
-        color-scheme: light dark;
-        --bg: light-dark(#eceff4, #2e3440);
-        --tx-1: light-dark(#2e3440, #eceff4);
-        --tx-2: light-dark(#434c5e, #d8dee9);
-        --ui: light-dark(#d8dee9, #4c566a);
-      }
-
-      body {
-        font-family: system-ui, sans-serif;
-        line-height: 1.5;
-        max-width: 900px;
-        margin: 2.5rem auto;
-        padding: 0 1.25rem;
-        color: var(--tx-1);
-        background: var(--bg);
-      }
-
-      h1 {
-        font-size: 1.5em;
-        border-bottom: 1px solid var(--ui);
-        padding-bottom: 0.5rem;
-      }
-
-      h2 {
-        font-size: 1.25em;
-        border-bottom: 1px solid var(--ui);
-        padding-bottom: 0.25rem;
-      }
-
-      a {
-        color: var(--tx-2);
-        text-decoration: none;
-        font-weight: 500;
-      }
-
       nav {
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
       }
-
-      ul {
-        margin-top: 0.5rem;
-        margin-bottom: 1rem;
-      }
-
-      li {
-        margin-bottom: 0.5rem;
-      }
-
       time {
-        color: var(--tx-2);
         font-style: italic;
       }
-
       .title {
         display: grid;
         gap: 0.25rem;
       }
-
       @media (min-width: 768px) {
         .title {
           grid-template-columns: 1fr auto;
