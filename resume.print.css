@@ -35,3 +35,6 @@ article {
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
 }
+.download {
+  display: none;
+}
