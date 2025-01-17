@@ -3,20 +3,24 @@ nav {
   flex-wrap: wrap;
   gap: 0.5rem;
 }
+
 time {
   font-style: italic;
 }
+
 .title {
   display: grid;
   gap: 0.25rem;
 }
+
 .download {
   position: fixed;
-  bottom: 1.25rem;
-  right: max(1.25rem, 50vw - 450px);
+  bottom: 2rem;
+  right: max(1rem, 50vw - 450px);
   display: flex;
   flex-direction: row-reverse;
 }
+
 @media (min-width: 768px) {
   .title {
     grid-template-columns: 1fr auto;

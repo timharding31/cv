@@ -5,36 +5,49 @@ body {
   max-width: none;
   padding: 0;
 }
+
 h1 {
   font-size: 16pt;
   margin: 0 0 0.3rem 0;
   padding-bottom: 0.2rem;
 }
+
 h2 {
   font-size: 12pt;
   margin: 0.4rem 0 0.3rem 0;
   padding-bottom: 0.1rem;
 }
+
 p {
   margin: 0.2rem 0;
 }
+
 ul {
   margin: 0.2rem 0 0.4rem 0;
   padding-left: 1.2rem;
 }
+
 li {
   margin-bottom: 0.2rem;
 }
+
 section {
   margin-bottom: 0.4rem;
 }
+
 article {
   margin-bottom: 0.3rem;
 }
+
 * {
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
 }
+
 .download {
+  display: none;
+}
+
+copyright-footer {
   display: none;
 }
