@@ -30,36 +30,17 @@
     <meta name="theme-color" content="#2e3440" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#eceff4" media="(prefers-color-scheme: light)" />
 
-    <link rel="stylesheet" href="styles.css" />
-    <style>
-      nav {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-      }
-      time {
-        font-style: italic;
-      }
-      .title {
-        display: grid;
-        gap: 0.25rem;
-      }
-      .download {
-        position: fixed;
-        bottom: 1.25rem;
-        right: max(1.25rem, 50vw - 450px);
-        display: flex;
-        flex-direction: row-reverse;
-      }
-      @media (min-width: 768px) {
-        .title {
-          grid-template-columns: 1fr auto;
-        }
-      }
-    </style>
-    <link rel="stylesheet" href="resume.print.css" media="print" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/resume.css" />
+    <link rel="stylesheet" href="./styles/resume.print.css" media="print" />
   </head>
   <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="download" viewBox="0 0 24 24">
+        <path d="M12 16L7 11L8.4 9.55L11 12.15V4H13V12.15L15.6 9.55L17 11L12 16ZM6 20C5.45 20 4.97917 19.8042 4.5875 19.4125C4.19583 19.0208 4 18.55 4 18V15H6V18H18V15H20V18C20 18.55 19.8042 19.0208 19.4125 19.4125C19.0208 19.8042 18.55 20 18 20H6Z"/>
+      </symbol>
+    </svg>
+
     <header>
       <h1>Tim Harding</h1>
       <p>Product-Focused Frontend Engineer</p>
@@ -210,18 +191,9 @@
     </section>
 
     <div class="download">
-      <a href="./Tim_Harding_Resume.pdf" download="Tim_Harding_Resume" class="btn" target="_blank">
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M12 16L7 11L8.4 9.55L11 12.15V4H13V12.15L15.6 9.55L17 11L12 16ZM6 20C5.45 20 4.97917 19.8042 4.5875 19.4125C4.19583 19.0208 4 18.55 4 18V15H6V18H18V15H20V18C20 18.55 19.8042 19.0208 19.4125 19.4125C19.0208 19.8042 18.55 20 18 20H6Z"
-            fill="currentColor"
-          />
+      <a href="./assets/documents/Tim_Harding_Resume.pdf" download="Tim_Harding_Resume" class="btn" target="_blank">
+        <svg width="24" height="24" fill="currentColor">
+          <use href="#download"/>
         </svg>
         <span>Download</span>
       </a>
